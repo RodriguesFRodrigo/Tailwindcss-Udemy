@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gerando componentes com o tailwind. */
+/* Todas as classes e estilos serão importadas em utilities. */
+@layer components {
+    .btn-red {
+        @apply bg-red-500 text-white py-2 px-4 rounded;
+    }
+
+    .btn-red:hover {
+        @apply bg-white text-red-500;
+    }
+
+}
