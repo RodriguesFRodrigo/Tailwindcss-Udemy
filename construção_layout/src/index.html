@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construção Layouts</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- container. -->
+    <!-- mx-auto: centraliza o container aplicando margens no eixo x automaticamente. -->
+    <!-- p-4: adiciona padding. -->
+    <!-- m-4: adiciona margin. -->
+    <!--
+        sm: 640px 
+        md: 768px
+        lg: 1024px
+        xl: 1280px
+        2xl: 1536px
+    -->
+    <div class="container mx-auto p-4 m-4 bg-red-300">
+        <p>O texto do container</p>
+    </div>
+    <div
+        class="container mx-auto p-4 m-4 bg-purple-600 sm:bg-green-600 md:bg-blue-600 lg:bg-red-600 xl:bg-yellow-600 2xl:bg-pink-600">
+        <p>Teste 1</p>
+    </div>
+
+    <!-- box sizing. -->
+    <!-- border-box: largura do conteúdo respeitada de acordo com a propriedade width. -->
+    <!-- box-content: largura do conteúdo soma width, padding e border. -->
+    <div class="container bg-purple-700 p-4 m-4 border-2 border-black border-box">Border-box</div>
+    <div class="container bg-yellow-700 p-4 m-4 border-2 border-black box-content">Box-content</div>
+
+    <!-- display. -->
+    <div class="container">
+        <span class="block">Não são elementos de bloco.</span>
+        <span class="block">Não são elementos de bloco.</span>
+        <div class="inline">Inline</div>
+        <div class="inline">Inline</div>
+        <div class="hidden">Estou aparecendo</div>
+    </div>
+
+    <!-- float e clear. -->
+    <!-- quando usamos floats os elementos saem da estrutura html e ficam flutuantes. -->
+    <!-- clear-both permite que os elementos revertam para a estrutura html normal. -->
+    <div class="bg-pink-500 float-right">Float Right</div>
+    <div class="bg-pink-500 float-left">Float Left</div>
+    <div class="clear-both"></div>
+    <div class="bg-pink-500 float-right">Float Right</div>
+    <div class="bg-pink-500 float-left">Float Left</div>
+    <div class="clear-both"></div>
+
+    <!-- overflow. -->
+    <!-- podemos criar ou eliminar o scroll. -->
+    <!-- overflow-x. -->
+    <!-- overflow-y. -->
+    <!-- overflow. x e y-->
+    <!-- valores auto ou none. -->
+    <div class="overflow-y-hidden bg-pink-500 h-16 m-6">
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+    </div>
+
+    <div class="overflow-y-auto bg-pink-500 h-16 m-6">
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+    </div>
+
+    <div class="overflow-x-auto bg-pink-500 h-16 m-6">
+        <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        </p>
+    </div>
+
+    <!-- posições e direções. -->
+    <div class="absolute bottom-0 right-0 bg-gray-500 p-4">
+        <p>Esse website utiliza cookies.</p>
+    </div>
+
+    <!-- alterando a visibilidade de elementos na tela. -->
+    <div class="visible p-4">
+        <p>Estou visível</p>
+    </div>
+    <div class="invisible p-4">
+        <p>Não estou visível</p>
+    </div>
+
+    <!-- z-index -->
+    <div class="relative">
+        <div class="absolute bg-red-300 w-20 p-6 z-10">Na Frente</div>
+        <div class="absolute bg-red-500 w-20 p-6">Atrás</div>
+    </div>
+</body>
+
+</html>
