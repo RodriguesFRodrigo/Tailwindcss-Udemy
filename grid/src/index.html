@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    .container div:nth-child(odd) {
+      background-color: green;
+    }
+
+    .container div:nth-child(even) {
+      background-color: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Criando um grid. -->
+  <div class="grid grid-cols-4 bg-red-500">
+    <div class="p-4">Coluna 1</div>
+    <div class="p-4">Coluna 2</div>
+    <div class="p-4">Coluna 3</div>
+    <div class="p-4">Coluna 4</div>
+  </div>
+
+  <div class="container grid grid-cols-3 odd:bg-gray-200">
+    <div class="p-4">Coluna 1</div>
+    <div class="p-4">Coluna 2</div>
+    <div class="p-4">Coluna 3</div>
+    <div class="p-4">Coluna 4</div>
+    <div class="p-4">Coluna 5</div>
+    <div class="p-4">Coluna 6</div>
+    <div class="p-4">Coluna 7</div>
+    <div class="p-4">Coluna 8</div>
+    <div class="p-4">Coluna 9</div>
+  </div>
+
+  <!-- Largura das colunas. -->
+  <div class="grid grid-cols-6">
+    <div class="col-span-1 bg-yellow-300 p-4">
+      <ul>
+        <li>Home</li>
+        <li>Sobre</li>
+        <li>Produtos</li>
+        <li>Contato</li>
+      </ul>
+    </div>
+    <div class="col-span-5 bg-blue-300 p-4">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis deleniti molestias quis ad, ipsam
+        culpa vero? Perferendis quod, accusantium quam reiciendis omnis repellat veritatis molestias ut. Nihil
+        distinctio consequatur praesentium?
+        Unde officia corporis provident illo consectetur repellat numquam velit debitis sint architecto voluptas
+        autem assumenda quis fuga obcaecati sunt, quia blanditiis tempore explicabo expedita sequi harum
+        quibusdam sapiente. Quibusdam, sint!</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-6">
+    <div class="col-span-1 bg-green-300 p-4">Barra Latera Esquerda</div>
+    <div class="col-span-4 bg-purple-600 p-4">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis deleniti molestias quis ad, ipsam
+        culpa vero? Perferendis quod, accusantium quam reiciendis omnis repellat veritatis molestias ut. Nihil
+        distinctio consequatur praesentium?
+        Unde officia corporis provident illo consectetur repellat numquam velit debitis sint architecto voluptas
+        autem assumenda quis fuga obcaecati sunt, quia blanditiis tempore explicabo expedita sequi harum
+        quibusdam sapiente. Quibusdam, sint!</p>
+    </div>
+    <div class="col-span-1 bg-green-300 p-4">Barra Latera Direita</div>
+  </div>
+  <div class="grid grid-cols-4">
+    <ul class="col-span-4 flex gap-4 justify-center p-4 bg-red-300">
+      <li>Home</li>
+      <li>Sobre</li>
+      <li>Produtos</li>
+      <li>Contato</li>
+    </ul>
+  </div>
+  <div class="grid grid-cols-4">
+    <div class="col-span-1 bg-blue-300 p-4">Barra Lateral Esquerda</div>
+    <div class="col-span-3 bg-yellow-300 p-4">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis deleniti molestias quis ad, ipsam
+        culpa vero? Perferendis quod, accusantium quam reiciendis omnis repellat veritatis molestias ut. Nihil
+        distinctio consequatur praesentium?
+        Unde officia corporis provident illo consectetur repellat numquam velit debitis sint architecto voluptas
+        autem assumenda quis fuga obcaecati sunt, quia blanditiis tempore explicabo expedita sequi harum
+        quibusdam sapiente. Quibusdam, sint!</p>
+    </div>
+  </div>
+
+  <!-- Espaçamento entre os itens. -->
+  <div class="container grid grid-cols-3 gap-4">
+    <div class="p-4">Coluna 1</div>
+    <div class="p-4">Coluna 2</div>
+    <div class="p-4">Coluna 3</div>
+    <div class="p-4">Coluna 4</div>
+    <div class="p-4">Coluna 5</div>
+    <div class="p-4">Coluna 6</div>
+    <div class="p-4">Coluna 7</div>
+    <div class="p-4">Coluna 8</div>
+    <div class="p-4">Coluna 9</div>
+  </div>
+</body>
+
+</html>
